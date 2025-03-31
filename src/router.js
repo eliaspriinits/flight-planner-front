@@ -6,7 +6,7 @@ import Booking from './views/BookingPage.vue';
 const routes = [
     { path: '/', component: Home },
     { path: '/flights', component: Flights },
-    { path: '/booking/:id', component: Booking, props: true }
+    { path: '/booking/:flightId', component: Booking, props: true },
 ];
 
 const router = createRouter({

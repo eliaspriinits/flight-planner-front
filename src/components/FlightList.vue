@@ -44,7 +44,7 @@ export default {
   },
   methods: {
     fetchFlights(filters = {}) {
-      axios.get('http://localhost:8080/flights/search', { params: filters })
+      axios.get('http://localhost:8080/flight/search', { params: filters })
           .then(response => {
             this.flights = response.data;
           })
